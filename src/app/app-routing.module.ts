@@ -19,6 +19,7 @@ const routes: Routes = [
   // onderstaande configuratie rendert de AdressenComponent naar de <router-outlet>
   // van de app (Geen parent-child relatie)
   { path: "postcode/adres", component: AdressenComponent },
+  { path: "postcode/:id", component: PostcodeComponent },
   {
     path: "postcode", component: PostcodeComponent,
     // onderstaande configuratie rendert de componenten naar de <router-outlet>

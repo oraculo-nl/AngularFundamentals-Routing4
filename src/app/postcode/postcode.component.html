@@ -1,6 +1,9 @@
-<h1>postcode</h1>
+<h1>postcode {{pathVariable}}</h1>
+<h1>{{postcode}} {{huisnummer}}</h1>
 <router-outlet></router-outlet>
 postcode pagina child links:<br>
 <a [routerLink]="['/postcode/adressen']">postcode -> adressen</a><br>
 <a [routerLink]="['/postcode/leden']">postcode -> leden</a><br>
-<a [routerLink]="['/postcode/adres']">postcode -> adres</a><br><br>
+<a [routerLink]="['/postcode/adres']">postcode -> adres</a><br>
+<a [routerLink]="['/postcode']" [queryParams]="{ postcode: '6789 XY', huisnummer: '10' }"> Stuur postcode 6789 XY en huisnummer 10</a><br><br>
+<button (click)="onButtonClick()">Tesla</button><br><br>
