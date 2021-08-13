@@ -12,6 +12,6 @@ export class AppComponent {
   constructor(private _router:Router) { }
 
   onButtonClick() : void {
-    this._router.navigate(['/leden'])
+    this._router.navigate(['/leden']);
   }
 }
