@@ -1,7 +1,10 @@
+<h1>{{title}}</h1>
 <router-outlet></router-outlet>
 website parent links:<br>
-<a href="/leden">leden</a><br>
-<a href="/autos">autos</a><br>
-<a href="/adressen">adressen</a><br>
-<a href="/postcodes">postcodes</a><br>
-<a href="/postcode">postcode</a><br>
+<a [routerLink]="['/leden']">leden</a><br>
+<a [routerLink]="['/autos']">autos</a><br>
+<a [routerLink]="['/adressen']">adressen</a><br>
+<a [routerLink]="['/postcodes']">postcodes</a><br>
+<a [routerLink]="['/postcode']">postcode</a><br>
+<br>
+<button (click)="onButtonClick()">leden</button>
