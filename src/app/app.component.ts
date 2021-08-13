@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title:string = 'AngularFundamentals-Routing3';
+  title:string = 'AngularFundamentals-Routing4';
 
   constructor(private _router:Router) { }
 

@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AdressenComponent } from './adressen/adressen.component';
 import { AutosComponent } from './autos/autos.component';
 import { LedenComponent } from './leden/leden.component';
+import { MagActiverenService } from './mag-activeren.service';
 import { OnbekendeurlComponent } from './onbekendeurl/onbekendeurl.component';
 import { PostcodeComponent } from './postcode/postcode.component';
 import { PostcodesComponent } from './postcodes/postcodes.component';
@@ -19,7 +20,7 @@ const routes: Routes = [
   // onderstaande configuratie rendert de AdressenComponent naar de <router-outlet>
   // van de app (Geen parent-child relatie)
   { path: "postcode/adres", component: AdressenComponent },
-  { path: "postcode/:id", component: PostcodeComponent },
+  { path: "postcode/:id", component: PostcodeComponent, canActivate: [MagActiverenService] },
   {
     path: "postcode", component: PostcodeComponent,
     // onderstaande configuratie rendert de componenten naar de <router-outlet>
